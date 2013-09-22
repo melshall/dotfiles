@@ -15,6 +15,7 @@ filetype plugin indent on
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/powerline'
+Bundle 'derekwyatt/vim-scala'
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 " }}}
 " Basic options ----------------------------------------------------------- {{{
@@ -349,7 +350,13 @@ augroup ft_vim
 augroup END
 
 " }}}
-
+" Scala {{{
+augroup ft_scala
+    au!
+    au FileType scala setlocal foldmethod=marker foldmarker={,}
+    au FileType scala setlocal textwidth=100
+augroup END
+" }}}
 " }}}
 " Quick editing ----------------------------------------------------------- {{{
 
