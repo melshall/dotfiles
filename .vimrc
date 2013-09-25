@@ -7,7 +7,6 @@ call vundle#rc()
 
 " let Vundle manage 
 Bundle 'gmarik/vundle'
-filetype plugin indent on
 
 " }}}
 " Plugins  ---------------------------------------------------------------- {{{
@@ -117,7 +116,9 @@ let maplocalleader = "\\"
 " }}}
 " Color scheme {{{
 
+" Setting these here will enable automatic file detection
 syntax on
+filetype plugin indent on
 set background=dark
 colorscheme molokai
 
