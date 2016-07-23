@@ -48,3 +48,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:/home/mohammed/.rvm/gems/ruby-1.9.3-p392@rails3tutorial2ndEd/bin:/home/mohammed/.rvm/gems/ruby-1.9.3-p392@global/bin:/home/mohammed/.rvm/rubies/ruby-1.9.3-p392/bin:/home/mohammed/.rvm/bin:/home/mohammed/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/melshall/.sdkman"
+[[ -s "/Users/melshall/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/melshall/.sdkman/bin/sdkman-init.sh"

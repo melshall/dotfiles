@@ -117,3 +117,7 @@ fi
 
 
 export PATH=$PATH:/home/mohammed/apps/sbt/bin
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/melshall/.sdkman"
+[[ -s "/Users/melshall/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/melshall/.sdkman/bin/sdkman-init.sh"

@@ -2,20 +2,21 @@
 
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage 
-Bundle 'gmarik/vundle'
-
 " }}}
 " Plugins  ---------------------------------------------------------------- {{{
 
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'scrooloose/nerdtree'
-Bundle 'Lokaltog/powerline'
-Bundle 'derekwyatt/vim-scala'
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+"set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+
+call vundle#end()            " required
+
+filetype plugin indent on    " required
 " }}}
 " Basic options ----------------------------------------------------------- {{{
 set t_Co=256
