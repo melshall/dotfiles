@@ -1,9 +1,6 @@
 export SBT_OPTS="-XX:PermSize=2G -XX:MaxPermSize=2G -Xmx2G -XX:ReservedCodeCacheSize=64m -XX:+CMSClassUnloadingEnabled"
 # begin devtools provisioning to setup local development
 
-export AWS_ACCESS_KEY_ID='AKIAJDXABZ6MQQFUENXA'
-export AWS_SECRET_ACCESS_KEY='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'
-
 # Ansible related
 export ANSIBLE_HOSTS='/lb/Lifebeats_Network_Orchestration/ansible/ec2.py'
 export EC2_INI_PATH='/lb/Lifebeats_Network_Orchestration/ansible/ec2.ini'
